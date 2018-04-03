@@ -4684,9 +4684,24 @@ sub, sup {
     }
 }
 
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+@media only screen and (min-width:550px) {
+    #experience {
+        width: 80%
+    }
+}
+
 .project-link {
-    display: block;
-    width: 100px;
+    display: inline-block;
+    width: 140px;
     margin: 10px 0;
     padding: 5px;
     color: #1a222c;
@@ -4701,6 +4716,29 @@ sub, sup {
 }
 
 .project-link:active, .project-link:hover {
+    background-color: #54516a;
+    border-color: #54516a;
+    color: #fff;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+}
+
+.resume-link {
+    display: block;
+    width: 200px;
+    margin: 10px 0;
+    padding: 5px;
+    color: #1a222c;
+    background-color: transparent;
+    border: 1px solid #1a222c;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+}
+
+.resume-link:active, .resume-link:hover {
     background-color: #54516a;
     border-color: #54516a;
     color: #fff;
@@ -4799,4 +4837,46 @@ sub, sup {
 
 .label-danger[href]:focus, .label-danger[href]:hover {
     background-color: #c9302c
+}
+
+div .underline-link {
+    position: relative;
+    display: inline-block;
+}
+
+div .underline-link:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #36363c;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+div .underline-link:focus:after, div .underline-link:hover:after {
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+
+a {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+
+.no-padding-top {
+    padding-top: 0em !important; 
 }

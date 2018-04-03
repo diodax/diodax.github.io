@@ -9,6 +9,7 @@
 
 	<!-- CSS Links go here -->
 	<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/timeline.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -35,6 +36,7 @@
 			</div>
 			<div class="header-links">
 				<a class="link" href="#about" data-scroll="">About Me</a>
+				<a class="link" href="#experience" data-scroll="">Experience</a>				
 				<a class="link" href="#projects" data-scroll="">Projects</a>
 			</div>
 		</div>
@@ -48,10 +50,18 @@
 	<!-- About Me section -->
 	<section id="about">
 		<div class="user-details">
-		  	<h1> My Expertise </h1>
-		  	<p> Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh
-				bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole
-				mustache man bun letterpress echo park VHS. </p>
+		  	<h1> About Me </h1>
+			  	<p> I'm a grad student at <a class="underline-link" href="https://www.rit.edu/" target="_blank">Rochester Institute of Technology</a> 
+					expecting to graduate in Many 2019. My work expertise covers multiple years of working with 
+					full stack web applications, with a proficiency in .NET, Node.js, AngularJS and SQL Server. 
+					I'm currently working at <a class="underline-link" href="https://megsoftconsulting.com/" target="_blank">Megsoft Consulting</a> as 
+					a Software Developer.
+				</p>
+				<p>
+					As a full-stack engineer, I've had the opportunity to work in the design and implementation 
+					of multiple end-to-end architectures. My goal is to always build applications that
+					are well-designed and scalable, both on the front-end as the back-end. 
+			</p>
 		</div>
 		<div class="user">
 		  	<div class="tech">
@@ -59,33 +69,87 @@
 				<i class="devicon-csharp-plain-wordmark colored"></i>
 				<i class="devicon-javascript-plain colored"></i>
 				<i class="devicon-python-plain colored"></i>
-				<p></p>
+				<p>Strong: C#, Javascript(ES5, ES6), SQL</p>
+				<p>Knowledgeable: Java, Python, MongoDB</p>
 			</div>
 			<div class="tech">
 				<h2>Frameworks</h2>
 				<i class="devicon-dot-net-plain-wordmark colored"></i>
 				<i class="devicon-angularjs-plain colored"></i>
 				<i class="devicon-vuejs-plain-wordmark colored"></i>
-				<p></p>
+				<p>Strong: .NET, Sails.js, AngularJS, jQuery</p>
+				<p>Knowledgeable: Express.js, Vue.js</p>
 			</div>
 			<div class="tech">
 				<h2>Tools</h2>
 				<i class="devicon-git-plain"></i>
 				<i class="devicon-sourcetree-plain-wordmark colored"></i>
 				<i class="devicon-visualstudio-plain colored"></i>
-				<p></p>
+				<p>Strong: Git, SourceTree, Bash</p>
+				<p>Knowledgeable: Webpack, Vagrant</p>
 			</div>
 		</div>
+
 	</section>
 	<!-- End of About Me section -->
 
+	<!-- Experience section -->
+	<section id="experience">
+		<div class="user-details"><h1> Experience </h1></div>
+		<div class="timeline user-experience">
+			<div class="entry">
+			  <div class="title">
+				<h3>Jul 2017 - Present</h3>
+				<p>Remote</p>
+			  </div>
+			  <div class="body">
+				<p>Software Developer <span class="company-name">@ Megsoft Consulting</span></p>
+				<ul>
+				  <li>Full stack development using ASP.NET MVC, Javascript and SQL Server</li>
+				  <li>Part of the mobile development team for Xamarin-based cross-platform apps</li>
+				</ul>
+			  </div>
+			</div>
+			<div class="entry">
+			  <div class="title">
+				<h3>Apr 2016 - Jul 2017</h3>
+				<p>Santo Domingo, DR</p>
+			  </div>
+			  <div class="body">
+				<p>Web​ ​Developer <span class="company-name">@​ ​Contraloría​ ​Gral.​ ​de​ ​la​ ​Rep.​ ​Dom.</span>​</p>
+				<ul>
+				  <li>Web development for multiple AngularJS and C#-based projects</li>
+				  <li>Part of the migration team of the system’s legacy Intranet app from PHP to ASP.NET</li>
+				  <li>Led the design and development of an AngularJS-based internal control app</li>
+				</ul>
+			  </div>
+			</div>
+			<div class="entry">
+			  <div class="title">
+				<h3>Mar 2015 -  Mar 2016</h3>
+				<p>Santo Domingo, DR</p>
+			  </div>
+			  <div class="body">
+				<p>Junior​ ​App​ ​Developer <span class="company-name">@​ ​Xtudia​ ​SRL</span>​</p>
+				<ul>
+				  <li>Collaborated on the development of multiple .NET-based software solutions 
+					  for local schools and academies.</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <a class="resume-link" href="assets/files/resume2018-v1.pdf" target="_blank">View My Resume&nbsp; <i class="fa fa-arrow-right"></i></a>	
+	</section>
+
+	<!-- End of Experience section -->
+
 	<!-- Featured Projects section -->
 	<section id="projects">
-		<div class="user-details"><h1> Featured Projects </h1></div>
+		<div class="user-details"><h1> Recent Projects </h1></div>
 		<div class="user-projects">
-			<div class="images-right"><img alt="mountains" src="assets/img/mountains.jpg"></div>
+			<div class="images-right"><img alt="crypto-sentiment" src="assets/img/crypto-sentiment-screenshot.jpg"></div>
 			<div class="contents">
-				<h3> Crypto Sentiment </h3>
+				<h3 class="no-padding-top"> Crypto Sentiment </h3>
 				<span class="label label-primary">Python</span>
 				<span class="label label-primary">HTML</span>
 				<span class="label label-primary">CSS</span>
@@ -93,23 +157,21 @@
 				<p>Webapp that compares sentiment of the top 10 market cap cryptocurrencies between different types 
 				   of media sources (mainstream media, cryptocurrency-focused media, and social media).
 				</p>
-				<a class="project-link" href="https://github.com/diodax/crypto-sentiment">Check it out</a>
+				<a class="project-link" href="https://github.com/diodax/crypto-sentiment" target="_blank">Github Repo &nbsp; <i class="fa fa-github"></i></a>
+				<a class="project-link" href="https://brickhackcryptoapp.appspot.com/" target="_blank">Check Demo &nbsp; <i class="fa fa-arrow-right"></i></a>
 			</div>
 		</div>
 		<div class="user-projects">
-			<div class="images-left"><img alt="mountains" src="assets/img/skate.jpg"></div>
+			<div class="images-left"><img alt="personal-website" src="assets/img/personal-website-screenshot.jpg"></div>
 			<div class="contents-right">
-				<h3> Project Title </h3>
-				<span class="label label-default">Default</span>
-				<span class="label label-primary">Primary</span>
-				<span class="label label-success">Success</span>
-				<span class="label label-info">Info</span>
-				<span class="label label-warning">Warning</span>
-				<span class="label label-danger">Danger</span>
-				<ul><li> Featured Skills</li></ul>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-				  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<a class="project-link" href="https://nrandecker.github.io/particle/#">Check it out</a>
+				<h3> Personal Website </h3>
+				<span class="label label-primary">HTML</span>
+				<span class="label label-primary">CSS</span>
+				<span class="label label-primary">Javascript</span>
+				<p>First iteration of my personal website, hosted on Github Pages. Developed with a conscious 
+				   effort to avoid using any unnecesary frameworks.
+				</p>
+				<a class="project-link" href="https://github.com/diodax/diodax.github.io">Github Repo &nbsp; <i class="fa fa-github"></i></a>
 			</div>
 		</div>	
 	</section>
@@ -117,11 +179,7 @@
 	
 	<!-- Footer section -->
 	<footer class="footer">
-		<p>© Anon Developer</p>
-		<p>Build with Jekyll and
-		  	<span class="love">❤</span> by
-			<a href="https://github.com/nrandecker">Nathan Randecker</a>
-		</p>
+		<p>Diosdavi Lara © 2018</p>
 	</footer>
 	<!-- End of Footer section -->
 
